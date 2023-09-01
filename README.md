@@ -1,1 +1,1 @@
-# ExerciciosJavaScript Senac
+# Exercicios JavaScript Senac
