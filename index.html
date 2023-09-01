@@ -1,0 +1,29 @@
+<html>
+    <head><title>Pagina Web</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1>Ola mundo!</h1>
+        <p>A estrada fica por la...</p>
+        <style>
+
+        </style>
+
+        <script>
+            var nome = prompt('Digite seu nome antes de entrar no site');
+    if (nome) {
+        var idade = prompt('Digite sua idade para realizar a votação');
+        if (idade && parseInt(idade) >= 18) {
+            alert('Bem vindo, sua idade e legal ' + nome+ '!');
+        } else {
+            alert('Desculpe, você ainda nao pode votar.');
+            window.location.href = 'https://www.google.com'; // Redirecionar para o Google ou outra página
+        }
+    } else {
+        alert('Nome não fornecido. O acesso ao site foi bloqueado.');
+        window.location.href = 'https://www.google.com'; // Redirecionar para o Google ou outra página
+    }
+        </script>
+    </body>
+</html>
