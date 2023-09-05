@@ -2,7 +2,8 @@ window.alert('Tudo certin?')
 
 //1
 var nome = prompt('Digite seu nome antes de entrar no site');
-var idadeAtual = prompt('Digite sua idade atual');
+var idadeAtual = prompt('Digite sua idade atual em anos');
+var meses = prompt("Digite em qual mes você faz aniversario");
 
 idadeAtual = parseInt(idadeAtual);
 alert(nome+', Sua idade atual é: ' + idadeAtual);
@@ -14,8 +15,11 @@ alert(nome+', Daqui a 30 anos você terá: ' + (idadeAtual + 30 * 365) + " dias 
     } else {
         alert('Desculpe' +nome+', na sua idade atual, você ainda não está apto para votar.');
     }
-
-idadeAtual = idadeAtual * 3;
+if(meses >= 8){
+    idadeAtual = idadeAtual + 4;
+}else{
+    idadeAtual = idadeAtual + 3;
+}
 
     if(idadeAtual >= 18){
         alert(nome+", Daqui a 40 meses, você será maior de idade, com: " + idadeAtual +" anos.");
