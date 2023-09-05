@@ -28,18 +28,17 @@ document.getElementById("calc").onclick = function() {
         alert(nome + ", Daqui a 40 meses, você não será maior de idade, e terá: " + idadeAtual + " anos");
     }
 }
-document.getElementById("boot").onclick = function() {{
+document.getElementById("boot").onclick = function() {
     var nome = prompt('Digite seu nome antes de entrar no site');
     alert(`Obrigado por entrar ${nome}`)
     var peso = prompt('Digite seu peso')
     var altura = prompt('Digite sua altura')
     const imc = peso / (altura * altura)
 if (imc >=30){
-    alert(`Seu IMC esta alterado, tome cuidado ${nome} ${imc}`)
+    alert(`Seu IMC esta alterado, tome cuidado: ${nome} seu imc é ${imc}`);
     }else {
-    alert(`Seu IMC esta favoravel com suas caracteristicas corporais` + nome + " imc:"+ imc )
-}
-}
+    alert(`Seu IMC esta favoravel com suas caracteristicas corporais, ` + nome + " seu imc é:"+ imc )
+    }
 }
 
 document.getElementById("aposent").onclick = function() {
