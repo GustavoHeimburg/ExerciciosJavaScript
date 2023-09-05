@@ -42,6 +42,17 @@ if (imc >=30){
 }
 }
 
+document.getElementById("aposent").onclick = function() {
+
+var nome = prompt('Digite seu nome e veja sua aposentadoria')
+    alert(`${nome} Continue para ver mais sobre sua aposentadoria...`)
+var sexo = prompt('Digite seu sexo: (M) (F)')
+var idade = prompt('Digite a sua idade')
+var anoscontr = prompt('Quantos anos voce cotribui')
+
+
+}
+
 
 
 
