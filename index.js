@@ -42,20 +42,22 @@ if (imc >=30){
 }
 
 document.getElementById("aposent").onclick = function() {
-function aposentadoria(){}
-var nome = prompt('Digite seu nome e veja sua aposentadoria')
-    alert(`${nome} Continue para ver mais sobre sua aposentadoria...`)
-var sexo = prompt('Digite seu sexo: (M) (F)')
-    prompt('Voce é do sexo, ' + sexo)
-var idade = prompt('Digite a sua idade')
-    prompt('Sua idade é: ' + idade)
-var anoscontr = prompt('Quantos anos voce cotribui, ')
+    var nome = prompt('Digite seu nome e veja sua aposentadoria')
+    alert(`${nome}, continue para ver mais sobre sua aposentadoria...`)
+    var sexo = prompt('Digite seu sexo: (M) (F)')
+    var idade = prompt('Digite a sua idade')
+    var anoscontr = prompt('Quantos anos você contribuiu?')
 
-    if (anoscontr >= 35 ){
-        prompt('Sua idade e legal para receber a aposentadoria')
-    }else{
-        prompt('Sua idade nao coresponde aos anos minimos de trabalho')
+    if (sexo == 'M' && anoscontr >= 35) {
+        alert('Seus anos de trabalho estão favoráveis para receber a aposentadoria masculina')
+    } else if (sexo == 'F' && anoscontr >= 30) {
+        alert('Seus anos de trabalho estão favoráveis para receber a aposentadoria feminina')
+    } else {
+        alert('Sua idade não corresponde aos anos mínimos de trabalho')
     }
+
+
+
 
 
 
