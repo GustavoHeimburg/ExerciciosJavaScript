@@ -57,14 +57,32 @@ document.getElementById("aposent").onclick = function() {
     }
 
 
+    document.getElementById("cal").onclick = function() {
+        var calculo = window.prompt('Digite a operação (+, -, *, /, %, **):')
+        var n1 = Number.parseFloat(window.prompt('Digite o primeiro numero'))
+        var n2 = Number.parseFloat(window.prompt('Digite o segundo numero'))
+        var result
 
-
-
-
-
-
-
-
+        switch (calculo) {
+            case '+':
+                result = n1 + n2
+                break
+            case'-':
+                result = n1 - n2
+                break
+            case '*':
+                result = n1 * n2
+                break
+            case '/':
+                result = n1 / n2
+                break
+            case '%':
+                result = n1 % n2
+                break
+            case '**':
+                result - n1 ** n2
+        }
+    }
 }
 
 
